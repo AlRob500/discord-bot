@@ -22,6 +22,7 @@ sudo chown root.root /lib/systemd/system/ttdiscordbot.service
 sudo chmod 644 /lib/systemd/system/ttdiscordbot.service
 sudo systemctl daemon-reload
 sudo systemctl enable ttdiscordbot.service
+sudo systemctl start ttdiscordbot.service
 ```
 
 ## Show service logs
