@@ -24,38 +24,37 @@ client.on('messageCreate',message => {
     
     //Help command: shows all commands that the bot will respond to
     if (message.content == '!help'){
-        message.reply(        'General: \n!calendar \n!actives \n!pledges \n!door \n!wifi \n!standards' 
-                        + '\n\nParties: \n!doorshift \n!bar' 
-                        + '\n\nCleanup Groups: \n!group1: \n!group2: \n!group3: \n!group4')
+        var response = "```\n";
+        for (var i = 0; i < obj.generalHelpCommands.length; i++) {
+            response += obj.generalHelpCommands[i] + "\n";
+        }
+
+        response += "\n";
+        for (var i = 0; i < obj.partyCommands.length; i++) {
+            response += obj.partyCommands[i] + "\n";
+        }
+
+        response += "\n";
+        for (var i = 0; i < obj.cleanupGroupCommands.length; i++){
+            response += obj.cleanupGroupCommands[i] + "\n";
+        }
+
+        response += "\n```"
+        message.reply(response);
     }
 
     //Actives list
     if (message.content === '!actives'){
-        console.log(obj.activesList)
-        var response = "";
-        var spacer = "\t\t\t";
-
-        for (const actives of obj.activesList) {
-            
+        let formattedNames = [];
+        for (let i = 0; i < obj.activesList.length; i++) {
+            let currentActive = obj.activesList[i];
+            let currentActiveFormatted = `${currentActive.id} ${currentActive.name}`;
+            formattedNames.push(currentActiveFormatted);
         }
-        //message.reply(obj.activesList);
-        // message.reply(      'Σ1016 Gaven        Σ1017Alec' 
-        //                 + '\nΣ1022 Franco      Σ1032 Gary'
-        //                 + '\nΣ1034 Max           Σ1036 Cam'
-        //                 + '\nΣ1037 Lambert   Σ1038 Jack'
-        //                 + '\nΣ1039 Gamer       Σ1040 Nick V.'
-        //                 + '\nΣ1041 Connor       Σ1042 Zach'
-        //                 + '\nΣ1043 Travis          Σ1044 Nick G.'
-        //                 + '\nΣ1045 Bryce          Σ1046 Oliver'
-        //                 + '\nΣ1047 Jake             Σ1048 Noah' 
-        //                 + '\nΣ1049 Tej                Σ1051 Steven'
-        //                 + '\nΣ1052 Rob              Σ1053 Aaron Shu.'
-        //                 + '\nΣ1054 Omer           Σ1055 Peter'
-        //                 + '\nΣ1056 Andy            Σ1057 Nic'
-        //                 + '\nΣ1058 Jacob K.      Σ1059 Juhan'
-        //                 + '\nΣ1060 Aaron Sta.  Σ1061 Mitchell (Thomas)'
-        //                 + '\nΣ1062 Jacob M.     Σ1063 Graham'
-        //                 + '\nΣ1064 Luke             Σ1065 Nate H.')
+
+        let response = createTable(formattedNames, 2);
+
+        message.reply(response);
     }
 
     //TT Schedule
@@ -65,57 +64,133 @@ client.on('messageCreate',message => {
 
     //Door code
     if (message.content == '!door'){
-        message.reply('3969')
+        message.reply("```\n" + obj.doorCode + "\n```")
     }
 
     //Calendar
     if (message.content == '!calendar'){
-        message.reply('TODO: Add calendar')
+        let formattedEvents = [];
+        for (let i = 0; i < obj.calendar.length; i++) {
+            let currentEvent = obj.calendar[i];
+            let currentEventFormatted = `${currentEvent.date} ${currentEvent.message}`;
+            formattedEvents.push(currentEventFormatted);
+        }
+
+        let response = createTable(formattedEvents, 1);
+
+        message.reply(response);
     }
 
     //Cleanup group 1
     if (message.content == '!group1'){
-        message.reply('TODO: Add Cleanup group 1')
+        var response = "```\n";
+
+        for (var i = 0; i < obj.cleanupGroup1.length; i++){
+            response += obj.cleanupGroup1[i] + "\n";
+        }
+        response += "\n```"
+        message.reply(response)
     }
 
     //Cleanup group 2
     if (message.content == '!group2'){
-        message.reply('TODO: Add Cleanup group 2')
+        var response = "```\n";
+
+        for (var i = 0; i < obj.cleanupGroup2.length; i++){
+            response += obj.cleanupGroup2[i] + "\n";
+        }
+        response += "\n```"
+        message.reply(response)
     }
 
     //Cleanup group 3
     if (message.content == '!group3'){
-        message.reply('TODO: Add Cleanup group 3')
+        var response = "```\n";
+
+        for (var i = 0; i < obj.cleanupGroup3.length; i++){
+            response += obj.cleanupGroup3[i] + "\n";
+        }
+        response += "\n```"
+        message.reply(response)
     }
 
     //Cleanup group 4
     if (message.content == '!group4'){
-        message.reply('TODO: Add Cleanup group 4')
+        var response = "```\n";
+
+        for (var i = 0; i < obj.cleanupGroup4.length; i++){
+            response += obj.cleanupGroup4[i] + "\n";
+        }
+        response += "\n```"
+        message.reply(response)
     }
 
     //pledges
     if (message.content == '!pledges'){
-        message.reply('TODO: Add list of pledges')
+        let formattedPledgeInfo = [];
+        for (let i = 0; i < obj.pledges.length; i++) {
+            let currentPledgeInfo = obj.pledges[i];
+            let currentEventFormatted = `${currentPledgeInfo.name}: ${currentPledgeInfo.major} ${currentPledgeInfo.phoneNumber}`;
+            formattedPledgeInfo.push(currentEventFormatted);
+        }
+
+        let response = createTable(formattedPledgeInfo, 2);
+
+        message.reply(response);
     }
 
     //Standards
     if (message.content == '!standards'){
-        message.reply('https://docs.google.com/forms/d/e/1FAIpQLScXktdcrC3qgcrLQ3j-ZOhcSvsGH2MUWHpwfQrwn8L57C3SuQ/viewform')
+        message.reply(obj.standardsLink)
     }
 
     //Door shift
     if (message.content == '!doorshift'){
-        message.reply('TODO: Add door shift info')
+        var response = "```\n";
+        var spacer = "          ";
+        var namesPerRow = 1;
+        for (var i = 0; i < obj.doorShift.length; i++){
+            var currentTime = obj.doorShift[i];
+            response += `${currentTime.time} ${currentTime.names}`;
+            if (i == obj.doorShift.length -1){
+                continue;
+            }
+            if ((i + 1) % namesPerRow == 0){
+                response += "\n";
+            }
+            else {
+                response += spacer; 
+            }
+        }
+        response += "\n```"
+        message.reply(response);
     }
    
     //Bar shift
     if (message.content == '!bar'){
-        message.reply('TODO: add bar shift info')
+        var response = "```\n";
+        var spacer = "          ";
+        var namesPerRow = 1;
+        for (var i = 0; i < obj.barShift.length; i++){
+            var currentTime = obj.barShift[i];
+            response += `${currentTime.time} ${currentTime.names}`;
+            if (i == obj.barShift.length -1){
+                continue;
+            }
+            if ((i + 1) % namesPerRow == 0){
+                response += "\n";
+            }
+            else {
+                response += spacer; 
+            }
+        }
+        response += "\n```"
+        message.reply(response);
     }
 
     //wifi
     if (message.content == '!wifi'){
-        message.reply('bdtc1924')
+        message.reply("```\n" + obj.wifiPassword + "\n```")
     }
     
     
@@ -123,3 +198,30 @@ client.on('messageCreate',message => {
 
 
 client.login(process.env.TOKEN)
+
+function createTable(items, itemsPerRow, spacing = "    ") {
+    let tableStr = "```\n";
+
+    var longest = items.reduce(
+        function (a, b) {
+            return a.length > b.length ? a : b;
+        }
+    );
+    
+    let longestStartLength = longest.length;
+
+    for (let i = 0; i < items.length; i++) {
+        let currentFormatted = items[i];
+        
+        tableStr += currentFormatted;
+
+        if((i + 1) % itemsPerRow === 0) {
+            tableStr += "\n";
+        } else {
+            tableStr += " ".repeat(longestStartLength - currentFormatted.length);
+            tableStr += spacing;
+        }
+    }
+
+    return tableStr + "\n```";
+}

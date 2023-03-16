@@ -1,20 +1,127 @@
 {
     "activesList": [
-        {
-            "id": "Σ1016", 
-            "name": "Gaven"
-        },
-        {
-            "id": "Σ1017", 
-            "name": "Alec"
-        },
-        {
-            "id": "Σ1022", 
-            "name": "Franco"
-        },
-        {
-            "id": "Σ1032", 
-            "name": "Gary"
-        }
+        { "id": "Σ1016", "name": "Gaven" },
+        { "id": "Σ1017", "name": "Alec" },
+        { "id": "Σ1022", "name": "Franco" },
+        { "id": "Σ1032", "name": "Gary" },
+        { "id": "Σ1034", "name": "Max" },
+        { "id": "Σ1036", "name": "Cam" },
+        { "id": "Σ1037", "name": "Lambert" },
+        { "id": "Σ1038", "name": "Jack" },
+        { "id": "Σ1039", "name": "Gamer" },
+        { "id": "Σ1040", "name": "Nick V." },
+        { "id": "Σ1041", "name": "Connor" },
+        { "id": "Σ1042", "name": "Zach" },
+        { "id": "Σ1043", "name": "Travis" },
+        { "id": "Σ1044", "name": "Nick G." },
+        { "id": "Σ1045", "name": "Bryce" },
+        { "id": "Σ1046", "name": "Oliver" },
+        { "id": "Σ1047", "name": "Jake" },
+        { "id": "Σ1048", "name": "Noah" },
+        { "id": "Σ1049", "name": "Tej" },
+        { "id": "Σ1051", "name": "Steven" },
+        { "id": "Σ1052", "name": "Rob" },
+        { "id": "Σ1053", "name": "Aaron Shu." },
+        { "id": "Σ1054", "name": "Omer" },
+        { "id": "Σ1055", "name": "Peter" },
+        { "id": "Σ1056", "name": "Andy" },
+        { "id": "Σ1057", "name": "Nic" },
+        { "id": "Σ1058", "name": "Jacob K." },
+        { "id": "Σ1059", "name": "Juhan" },
+        { "id": "Σ1060", "name": "Aaron Sta." },
+        { "id": "Σ1061", "name": "Mitchell (Thomas)" },
+        { "id": "Σ1062", "name": "Jacob M." },
+        { "id": "Σ1063", "name": "Graham" },
+        { "id": "Σ1064", "name": "Luke" },
+        { "id": "Σ1065", "name": "Nate H." }
+    ],
+    "doorCode": "3969",
+    "standardsLink": "https://docs.google.com/forms/d/e/1FAIpQLScXktdcrC3qgcrLQ3j-ZOhcSvsGH2MUWHpwfQrwn8L57C3SuQ/viewform",
+    "wifiPassword": "bdtc1924",
+    "cleanupGroup1": [
+        "Commander",
+        "Cum Man",
+        "Lamber",
+        "Tboner",
+        "Tej Dungarani",
+        "Chips Omer",
+        "Kowalski",
+        "Jacob McGowan"
+    ],
+    "cleanupGroup2": [
+        "Alec",
+        "Jackson",
+        "Nick V.",
+        "Nick Ga",
+        "Steven",
+        "Beter Salem",
+        "Juhan",
+        "Graham"
+    ],
+    "cleanupGroup3": [
+        "Franco",
+        "Gamer",
+        "Funk Master",
+        "Behr Claw",
+        "Rob",
+        "Andy",
+        "Aaron Stalnaker",
+        "Luke"
+    ],
+    "cleanupGroup4": [
+        "Mog Daddy",
+        "Oliver",
+        "Vector",
+        "Boruto",
+        "Starin Aaron",
+        "Nic Z",
+        "Moggs",
+        "Real Nate"
+    ],
+    "generalHelpCommands": [
+        "General:",
+        "!calendar",
+        "!actives",
+        "!pledges",
+        "!door",
+        "!wifi",
+        "!standards"
+    ],
+    "partyCommands": [
+        "Parties:",
+        "!doorshift",
+        "!bar"
+    ],
+    "cleanupGroupCommands": [
+        "Cleanup Groups:",
+        "!group1",
+        "!group2",
+        "!group3",
+        "!gorup4"
+    ],
+    "doorShift": [
+        { "time": "Time 1:","names": "Name1 + name 2" },
+        { "time": "Time 2:", "names": "Name1 + name 2" }
+    ],
+    "barShift": [
+        { "time": "Time 1:", "names": "Name 1 + name 2" },
+        { "time": "Time 2:", "names": "Name1 + name 2" }
+    ],
+    "pledges": [
+        { "name": "Emmett Chambers","major": "MechE","phoneNumber": "(216)-645-8398" },
+        { "name": "Akshat Katwala","major": "CSE","phoneNumber": "(714)-496-1685" },
+        { "name": "Shiva Nallapati","major": "CSE","phoneNumber": "(630)-532-0424" },
+        { "name" : "Advaith Prasanna","major" : "CSE","phoneNumber" : "(512)-917-4810" },
+        { "name" : "Aneetej Arora","major" : "CSE","phoneNumber" : "(614)-787-0179" },
+        { "name" : "Jack Grimm","major" : "CSE","phoneNumber" : "(330)-808-4235" },
+        { "name" : "Kenny Tanaka","major" : "MechE","phoneNumber" : "(614)-598-6424" },
+        { "name" : "Brendan Sheehan","major" : "Civil","phoneNumber" : "(614)-619-6102" },
+        { "name" : "Matthew Romans","major" : "MechE","phoneNumber" : "(513)-330-6102" },
+        { "name" : "Jay Bhanot","major" : "Civil","phoneNumber" : "(240)-888-0356" },
+        { "name" : "Arnav Rajashekara","major" : "CSE","phoneNumber" : "(425)-305-8801" }
+    ],
+    "calendar": [
+        { "date": "Date and Time", "message": "what is the event" },
+        { "date": "Date 2", "message": "second message" }
     ]
 }

@@ -4,15 +4,17 @@
   "description": "",
   "main": "testServer.js",
   "scripts": {
-	  "start": "node testServer.js",  
-    "debug": "./node_modules/.bin/nodemon testServer.js", 
+    "start": "node testServer.js",
+    "debug": "cross-env ./node_modules/.bin/nodemon testServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "discord.js": "^14.8.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.21"
   }
 }
