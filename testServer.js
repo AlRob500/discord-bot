@@ -40,6 +40,7 @@ client.on('messageCreate',message => {
         }
 
         response += "\n```"
+        console.log("Actives List Requested")
         message.reply(response);
     }
 
