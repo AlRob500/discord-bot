@@ -17,7 +17,14 @@ nvm use 16
 
 ## Add systemd service to service
 ```
-cp ./systemd/ttdiscordbot.service /lib/systemd/system/ttdiscordbot.service
-chown root.root /lib/systemd/system/ttdiscordbot.service
-chmod 644 /lib/systemd/system/ttdiscordbot.service
+sudo cp ./systemd/ttdiscordbot.service /lib/systemd/system/ttdiscordbot.service
+sudo chown root.root /lib/systemd/system/ttdiscordbot.service
+sudo chmod 644 /lib/systemd/system/ttdiscordbot.service
+sudo systemctl daemon-reload
+sudo systemctl enable ttdiscordbot.service
+```
+
+## Show service logs
+```
+sudo journalctl -u ttdiscordbot -f
 ```
