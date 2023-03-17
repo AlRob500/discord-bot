@@ -29,3 +29,26 @@ sudo systemctl start ttdiscordbot.service
 ```
 sudo journalctl -u ttdiscordbot -f
 ```
+
+## Setting up SSH connection in Visual Studio Code
+
+1. Install the Remote-SSH extension by Microsoft from the extensions page
+2. In the menu bar, got to View > Command Pallet and type Remote-SSH: Connect to Host and select that option
+3. Click on Configure SSH Hosts and select C:\Users\'user'\ .ssh\config
+4. Copy and past the code below
+
+```
+Host ttpiserver
+  HostName ttpiserver
+  User tt
+```
+
+5. Repeat step 2 
+6. Select the option 'ttpiserver'. A new Visual Studio Code window will open and prompt you for the password
+7. Once connected, go to the Explorer tab on the left column and select open folder
+8. Select 'tt-discord-bot' and then click ok. 
+
+When connecting to the sever to make changes to the bot after you've followd the above steps, simply select tt-discord-bot [SSH: ttpiserver] from the Recent section of the Welcome page of Visual Studio Code
+
+## Editing Bot Responses
+All bot responses are stored in botResponses.json. If you need to add more information, follow the style format already in place.

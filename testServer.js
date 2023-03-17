@@ -14,7 +14,7 @@ const client = new Client({
 })
 
 client.on('ready',() => {
-    console.log('Bot is online')
+    console.log('Bot is online');
 })
 
 client.on('messageCreate',message => {
@@ -40,7 +40,7 @@ client.on('messageCreate',message => {
         }
 
         response += "\n```"
-        console.log("Actives List Requested")
+        console.log("Help list requested");
         message.reply(response);
     }
 
@@ -55,16 +55,18 @@ client.on('messageCreate',message => {
 
         let response = createTable(formattedNames, 2);
 
+        console.log("Actives List requested");
         message.reply(response);
     }
 
     //TT Schedule
     if (message.content == "!schedule"){
-        message.reply('TODO: Add schedule')
+        message.reply('!calendar');
     }
 
     //Door code
     if (message.content == '!door'){
+        console.log("Door code requested");
         message.reply("```\n" + obj.doorCode + "\n```")
     }
 
@@ -79,6 +81,7 @@ client.on('messageCreate',message => {
 
         let response = createTable(formattedEvents, 1);
 
+        console.log("Calendar requested");
         message.reply(response);
     }
 
@@ -90,6 +93,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup1[i] + "\n";
         }
         response += "\n```"
+        console.log("Cleanup group 1 requested");
         message.reply(response)
     }
 
@@ -101,6 +105,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup2[i] + "\n";
         }
         response += "\n```"
+        console.log("Cleanup group 2 requested");
         message.reply(response)
     }
 
@@ -112,6 +117,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup3[i] + "\n";
         }
         response += "\n```"
+        console.log("Cleanup group 3 requested");
         message.reply(response)
     }
 
@@ -123,6 +129,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup4[i] + "\n";
         }
         response += "\n```"
+        console.log("Cleanup group 4 requested");
         message.reply(response)
     }
 
@@ -137,11 +144,13 @@ client.on('messageCreate',message => {
 
         let response = createTable(formattedPledgeInfo, 2);
 
+        console.log("Pledge list requested");
         message.reply(response);
     }
 
     //Standards
     if (message.content == '!standards'){
+        console.log("Standards link requested");
         message.reply(obj.standardsLink)
     }
 
@@ -164,6 +173,7 @@ client.on('messageCreate',message => {
             }
         }
         response += "\n```"
+        console.log("Door shift requested");
         message.reply(response);
     }
    
@@ -186,11 +196,13 @@ client.on('messageCreate',message => {
             }
         }
         response += "\n```"
+        console.log("Bar shift requested");
         message.reply(response);
     }
 
     //wifi
     if (message.content == '!wifi'){
+        console.log("Wifi code requested");
         message.reply("```\n" + obj.wifiPassword + "\n```")
     }
     
