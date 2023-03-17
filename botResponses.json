@@ -41,7 +41,7 @@
     "cleanupGroup1": [
         "Commander",
         "Cum Man",
-        "Lamber",
+        "Lambert",
         "Tboner",
         "Tej Dungarani",
         "Chips Omer",
@@ -108,20 +108,20 @@
         { "time": "Time 2:", "names": "Name1 + name 2" }
     ],
     "pledges": [
-        { "name": "Emmett Chambers","major": "MechE","phoneNumber": "(216)-645-8398" },
-        { "name": "Akshat Katwala","major": "CSE","phoneNumber": "(714)-496-1685" },
-        { "name": "Shiva Nallapati","major": "CSE","phoneNumber": "(630)-532-0424" },
-        { "name" : "Advaith Prasanna","major" : "CSE","phoneNumber" : "(512)-917-4810" },
-        { "name" : "Aneetej Arora","major" : "CSE","phoneNumber" : "(614)-787-0179" },
-        { "name" : "Jack Grimm","major" : "CSE","phoneNumber" : "(330)-808-4235" },
-        { "name" : "Kenny Tanaka","major" : "MechE","phoneNumber" : "(614)-598-6424" },
-        { "name" : "Brendan Sheehan","major" : "Civil","phoneNumber" : "(614)-619-6102" },
-        { "name" : "Matthew Romans","major" : "MechE","phoneNumber" : "(513)-330-6102" },
-        { "name" : "Jay Bhanot","major" : "Civil","phoneNumber" : "(240)-888-0356" },
-        { "name" : "Arnav Rajashekara","major" : "CSE","phoneNumber" : "(425)-305-8801" }
+        { "name": "Emmett Chambers",    "major": "MechE",   "phoneNumber": "(216)-645-8398" },
+        { "name": "Akshat Katwala",     "major": "CSE",     "phoneNumber": "(714)-496-1685" },
+        { "name": "Shiva Nallapati",    "major": "CSE",     "phoneNumber": "(630)-532-0424" },
+        { "name" : "Advaith Prasanna",  "major" : "CSE",    "phoneNumber" : "(512)-917-4810" },
+        { "name" : "Aneetej Arora",     "major" : "CSE",    "phoneNumber" : "(614)-787-0179" },
+        { "name" : "Jack Grimm",        "major" : "CSE",    "phoneNumber" : "(330)-808-4235" },
+        { "name" : "Kenny Tanaka",      "major" : "MechE",  "phoneNumber" : "(614)-598-6424" },
+        { "name" : "Brendan Sheehan",   "major" : "Civil",  "phoneNumber" : "(614)-619-6102" },
+        { "name" : "Matthew Romans",    "major" : "MechE",  "phoneNumber" : "(513)-330-6102" },
+        { "name" : "Jay Bhanot",        "major" : "Civil",  "phoneNumber" : "(240)-888-0356" },
+        { "name" : "Arnav Rajashekara", "major" : "CSE",    "phoneNumber" : "(425)-305-8801" }
     ],
     "calendar": [
         { "date": "Date and Time", "message": "what is the event" },
-        { "date": "Date 2", "message": "second message" }
+        { "date": "Date and Time", "message": "what is the event" }
     ]
 }

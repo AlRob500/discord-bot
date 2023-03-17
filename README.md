@@ -51,4 +51,4 @@ Host ttpiserver
 When connecting to the sever to make changes to the bot after you've followd the above steps, simply select tt-discord-bot [SSH: ttpiserver] from the Recent section of the Welcome page of Visual Studio Code
 
 ## Editing Bot Responses
-All bot responses are stored in botResponses.json. If you need to add more information, follow the style format already in place.
+All bot responses are stored in botResponses.json. If you need to add more information to an existing command, follow the style format already in place. Then commit changes to the gitub with a message about what you changed
