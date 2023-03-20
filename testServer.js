@@ -75,7 +75,7 @@ client.on('messageCreate',message => {
         let formattedEvents = [];
         for (let i = 0; i < obj.calendar.length; i++) {
             let currentEvent = obj.calendar[i];
-            let currentEventFormatted = `${currentEvent.date} ${currentEvent.message}`;
+            let currentEventFormatted = `${currentEvent.date} - ${currentEvent.message}`;
             formattedEvents.push(currentEventFormatted);
         }
 
@@ -204,6 +204,11 @@ client.on('messageCreate',message => {
     if (message.content == '!wifi'){
         console.log("Wifi code requested");
         message.reply("```\n" + obj.wifiPassword + "\n```")
+    }
+
+    if (message.content == '!whatarethefinegentlemenofthetataudoingthisweekendpleaseineedtoknowrightnow'){
+        console.log('Connor is based');
+        message.reply('!calendar');
     }
     
     

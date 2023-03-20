@@ -100,12 +100,24 @@
         "!gorup4"
     ],
     "doorShift": [
-        { "time": "Time 1:","names": "Name1 + name 2" },
-        { "time": "Time 2:", "names": "Name1 + name 2" }
+        { "time": "9:00-9:30",      "names": "Name1 + name 2" },
+        { "time": "9:30-10:00:",    "names": "Name1 + name 2" },
+        { "time": "10:00-10:30",    "names": "Name1 + name 2" },
+        { "time": "10:30-11:00",    "names": "Name1 + name 2" },
+        { "time": "11:00-11:30",    "names": "Name1 + name 2" },
+        { "time": "11:30-12:00",    "names": "Name1 + name 2" },
+        { "time": "12:00-12:30",    "names": "Name1 + name 2" },
+        { "time": "12:30-1:00",     "names": "Name1 + name 2" }
     ],
     "barShift": [
-        { "time": "Time 1:", "names": "Name 1 + name 2" },
-        { "time": "Time 2:", "names": "Name1 + name 2" }
+        { "time": "9:00-9:30",      "names": "Name1 + name 2" },
+        { "time": "9:30-10:00:",    "names": "Name1 + name 2" },
+        { "time": "10:00-10:30",    "names": "Name1 + name 2" },
+        { "time": "10:30-11:00",    "names": "Name1 + name 2" },
+        { "time": "11:00-11:30",    "names": "Name1 + name 2" },
+        { "time": "11:30-12:00",    "names": "Name1 + name 2" },
+        { "time": "12:00-12:30",    "names": "Name1 + name 2" },
+        { "time": "12:30-1:00",     "names": "Name1 + name 2" }
     ],
     "pledges": [
         { "name": "Emmett Chambers",    "major": "MechE",   "phoneNumber": "(216)-645-8398" },
@@ -121,7 +133,9 @@
         { "name" : "Arnav Rajashekara", "major" : "CSE",    "phoneNumber" : "(425)-305-8801" }
     ],
     "calendar": [
-        { "date": "Date and Time", "message": "what is the event" },
-        { "date": "Date and Time", "message": "what is the event" }
+        { "date": "Wednesday (3/22) @ night",   "message": "(Possibly) Horseshoe with the boys"},
+        { "date": "Friday (3/24) @ 9:00pm",     "message": "Philanthropy party, jersey themed"},
+        { "date": "Saturday (3/25) @ 6:00pm",   "message": "Pledge Bachelor Night" }
+        
     ]
 }
