@@ -1,3 +1,7 @@
+# Theta Tau Discord Bots
+
+## Development Setup
+TODO
 ## Raspberry Pi Setup
 
 ### Fresh Install
