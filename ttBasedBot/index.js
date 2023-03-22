@@ -40,7 +40,7 @@ client.on('messageCreate',message => {
         }
 
         response += "\n```"
-        console.log("Help list requested");
+        journalLog(process.env.LOG_PREFIX, "Help list requested");
         message.reply(response);
     }
 
@@ -55,7 +55,7 @@ client.on('messageCreate',message => {
 
         let response = createTable(formattedNames, 2);
 
-        console.log("Actives List requested");
+        journalLog(process.env.LOG_PREFIX, "Actives List requested");
         message.reply(response);
     }
 
@@ -66,7 +66,7 @@ client.on('messageCreate',message => {
 
     //Door code
     if (message.content == '!door'){
-        console.log("Door code requested");
+        journalLog(process.env.LOG_PREFIX, "Door code requested");
         message.reply("```\n" + obj.doorCode + "\n```")
     }
 
@@ -81,7 +81,7 @@ client.on('messageCreate',message => {
 
         let response = createTable(formattedEvents, 1);
 
-        console.log("Calendar requested");
+        journalLog(process.env.LOG_PREFIX, "Calendar requested");
         message.reply(response);
     }
 
@@ -93,7 +93,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup1[i] + "\n";
         }
         response += "\n```"
-        console.log("Cleanup group 1 requested");
+        journalLog(process.env.LOG_PREFIX, "Cleanup group 1 requested");
         message.reply(response)
     }
 
@@ -105,7 +105,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup2[i] + "\n";
         }
         response += "\n```"
-        console.log("Cleanup group 2 requested");
+        journalLog(process.env.LOG_PREFIX, "Cleanup group 2 requested");
         message.reply(response)
     }
 
@@ -117,7 +117,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup3[i] + "\n";
         }
         response += "\n```"
-        console.log("Cleanup group 3 requested");
+        journalLog(process.env.LOG_PREFIX, "Cleanup group 3 requested");
         message.reply(response)
     }
 
@@ -129,7 +129,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup4[i] + "\n";
         }
         response += "\n```"
-        console.log("Cleanup group 4 requested");
+        journalLog(process.env.LOG_PREFIX, "Cleanup group 4 requested");
         message.reply(response)
     }
 
@@ -144,13 +144,13 @@ client.on('messageCreate',message => {
 
         let response = createTable(formattedPledgeInfo, 2);
 
-        console.log("Pledge list requested");
+        journalLog(process.env.LOG_PREFIX, "Pledge list requested");
         message.reply(response);
     }
 
     //Standards
     if (message.content == '!standards'){
-        console.log("Standards link requested");
+        journalLog(process.env.LOG_PREFIX, "Standards link requested");
         message.reply(obj.standardsLink)
     }
 
@@ -173,7 +173,7 @@ client.on('messageCreate',message => {
             }
         }
         response += "\n```"
-        console.log("Door shift requested");
+        journalLog(process.env.LOG_PREFIX, "Door shift requested");
         message.reply(response);
     }
    
@@ -196,18 +196,18 @@ client.on('messageCreate',message => {
             }
         }
         response += "\n```"
-        console.log("Bar shift requested");
+        journalLog(process.env.LOG_PREFIX, "Bar shift requested");
         message.reply(response);
     }
 
     //wifi
     if (message.content == '!wifi'){
-        console.log("Wifi code requested");
+        journalLog(process.env.LOG_PREFIX, "Wifi code requested");
         message.reply("```\n" + obj.wifiPassword + "\n```")
     }
 
     if (message.content == '!whatarethefinegentlemenofthetataudoingthisweekendpleaseineedtoknowrightnow'){
-        console.log('Connor is based');
+        journalLog(process.env.LOG_PREFIX, "Connor is based");
         message.reply('!calendar');
     }
     
@@ -239,6 +239,14 @@ function createTable(items, itemsPerRow, spacing = "    ") {
     }
 
     return tableStr + "\n```";
+}
+
+function journalLog(prefix, command){
+
+    let journalMsg = "";
+    journalMsg += prefix + command;
+
+    console.log(journalMsg);
 }
 
 module.exports = {

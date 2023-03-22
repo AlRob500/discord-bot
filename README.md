@@ -1,6 +1,10 @@
 # Theta Tau Discord Bots
 
 ## Development Setup
+1. Create a folder on your local machine to hold the repository then navigate to this folder in the terminal.
+2. Clone the remote repository by running the command `git clone`.
+3. Install the node dependancies by running `npm install` in the root of the repository.
+
 TODO
 ## Raspberry Pi Setup
 
@@ -62,4 +66,4 @@ Host ttpiserver
 When connecting to the sever to make changes to the bot after you've followd the above steps, simply select tt-discord-bot [SSH: ttpiserver] from the Recent section of the Welcome page of Visual Studio Code
 
 ## Editing Bot Responses
-All bot responses are stored in botResponses.json. If you need to add more information to an existing command, follow the style format already in place. Then commit changes to the gitub with a message about what you changed
+All bot responses are stored in botResponses.json. If you need to add more information to an existing command, follow the style format already in place. Then commit changes to the gitub with a message about what you changed and the bot will automatically update once an hour with the changes. If you want to force the bot to update imediately, connect to the server via SSH and run the command `sudo systemctl restart tt-discord-bot-update.service`.
