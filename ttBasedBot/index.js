@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 
-
+//Add custom log function to prepend a tag for this bot
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -214,9 +214,6 @@ client.on('messageCreate',message => {
     
 })
 
-
-client.login(process.env.TOKEN)
-
 function createTable(items, itemsPerRow, spacing = "    ") {
     let tableStr = "```\n";
 
@@ -242,4 +239,8 @@ function createTable(items, itemsPerRow, spacing = "    ") {
     }
 
     return tableStr + "\n```";
+}
+
+module.exports = {
+    ttBasedBot: client
 }

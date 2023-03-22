@@ -6,7 +6,7 @@ After=network.target
 Environment=TT_IS_SERVICE=true
 Type=idle
 User=tt
-ExecStart=/usr/bin/bash -c "cd /home/tt/tt-discord-bot/ && /home/tt/.nvm/versions/node/v16.19.1/bin/node testServer.js"
+ExecStart=/usr/bin/bash -c "cd /home/tt/tt-discord-bot/ && /home/tt/.nvm/versions/node/v16.19.1/bin/node main.js"
 Restart=always
 
 [Install]

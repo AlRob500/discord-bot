@@ -1,0 +1,13 @@
+[Unit]
+Description=Discord Bot Update Service
+After=network.target
+
+[Service]
+Environment=TT_IS_SERVICE=true
+Type=idle
+ExecStart=/usr/bin/bash -c "cd /home/tt/tt-discord-bot/ && /usr/bin/bash ./scripts/update-bot.sh"
+Restart=always
+RestartSec=3600s
+
+[Install]
+WantedBy=multi-user.target
