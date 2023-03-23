@@ -14,7 +14,7 @@ const client = new Client({
 })
 
 client.on('ready',() => {
-    console.log('Bot is online');
+    journalLog(process.env.LOG_PREFIX, 'Bot is online');
 })
 
 client.on('messageCreate',message => {

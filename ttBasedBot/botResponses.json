@@ -100,24 +100,24 @@
         "!gorup4"
     ],
     "doorShift": [
-        { "time": "9:00-9:30",      "names": "Name1 + name 2" },
-        { "time": "9:30-10:00:",    "names": "Name1 + name 2" },
-        { "time": "10:00-10:30",    "names": "Name1 + name 2" },
-        { "time": "10:30-11:00",    "names": "Name1 + name 2" },
-        { "time": "11:00-11:30",    "names": "Name1 + name 2" },
-        { "time": "11:30-12:00",    "names": "Name1 + name 2" },
-        { "time": "12:00-12:30",    "names": "Name1 + name 2" },
-        { "time": "12:30-1:00",     "names": "Name1 + name 2" }
+        { "time": "9:00-9:30:  ",    "names": "Kowalski & Pledge Advaith" },
+        { "time": "9:30-10:00: ",    "names": "Juhan & Pledge Aneetej" },
+        { "time": "10:00-10:30:",    "names": "Shaaron & Pledge Jack" },
+        { "time": "10:30-11:00:",    "names": "Thomas & Pledge Kenny" },
+        { "time": "11:00-11:30:",    "names": "Door Chair & Pledge Brendan" },
+        { "time": "11:30-12:00:",    "names": "Graham & Pledge Matthew" },
+        { "time": "12:00-12:30:",    "names": "Luke & Pledge Jay" },
+        { "time": "12:30-1:00: ",    "names": "Bereal & Pledge Nav" }
     ],
     "barShift": [
-        { "time": "9:00-9:30",      "names": "Name1 + name 2" },
-        { "time": "9:30-10:00:",    "names": "Name1 + name 2" },
-        { "time": "10:00-10:30",    "names": "Name1 + name 2" },
-        { "time": "10:30-11:00",    "names": "Name1 + name 2" },
-        { "time": "11:00-11:30",    "names": "Name1 + name 2" },
-        { "time": "11:30-12:00",    "names": "Name1 + name 2" },
-        { "time": "12:00-12:30",    "names": "Name1 + name 2" },
-        { "time": "12:30-1:00",     "names": "Name1 + name 2" }
+        { "time": "9:00-9:30:  ",      "names": "Gaven & Connor" },
+        { "time": "9:30-10:00: ",    "names": "Max & Franco" },
+        { "time": "10:00-10:30:",    "names": "Justin & Cam" },
+        { "time": "10:30-11:00:",    "names": "Gamer & Backbone" },
+        { "time": "11:00-11:30:",    "names": "Vector & Jack" },
+        { "time": "11:30-12:00:",    "names": "Travis & Bryce" },
+        { "time": "12:00-12:30:",    "names": "Peter & Nob" },
+        { "time": "12:30-1:00: ",     "names": "Oliver & Connor" }
     ],
     "pledges": [
         { "name": "Emmett Chambers",    "major": "MechE",   "phoneNumber": "(216)-645-8398" },
