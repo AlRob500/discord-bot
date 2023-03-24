@@ -8,6 +8,7 @@ Type=idle
 User=tt
 ExecStart=/usr/bin/bash -c "cd /home/tt/tt-discord-bot/ && /home/tt/.nvm/versions/node/v16.19.1/bin/node main.js"
 Restart=always
+RestartSec=3600s
 
 [Install]
 WantedBy=multi-user.target
