@@ -117,7 +117,7 @@ client.on('messageCreate',message => {
             response += obj.cleanupGroup3[i] + "\n";
         }
         response += "\n```"
-        journalLog(process.env.LOG_PREFIX, "Cleanup group 3 requested");
+        journalLog(process.env.LOG_PREFIX, "Cleanup group 3 has been requested");
         message.reply(response)
     }
 
