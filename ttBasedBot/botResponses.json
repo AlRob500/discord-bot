@@ -133,9 +133,10 @@
         { "name" : "Arnav Rajashekara", "major" : "CSE",    "phoneNumber" : "(425)-305-8801" }
     ],
     "calendar": [
-        { "date": "Wednesday (3/22) @ 8:00pm",   "message": "Horseshoe with the boys"},
-        { "date": "Friday (3/24) @ 9:00pm",     "message": "Philanthropy party, jersey themed"},
-        { "date": "Saturday (3/25) @ 6:00pm",   "message": "Pledge Bachelor Night" }
+        { "date": "Tuesday (3/28) @ TBD",       "message": "Smash Tourney"},
+        { "date": "Wednesday (3/29) @ TBD",     "message": "List Party"},
+        { "date": "Friday (3/31) @ 8:00pm",     "message": "Presentation Night"},
+        { "date": "Sunday (4/2) @ 8:00pm",      "message": "Pledgeoke"}
         
     ]
 }
