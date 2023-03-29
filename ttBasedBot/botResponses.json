@@ -133,8 +133,7 @@
         { "name" : "Arnav Rajashekara", "major" : "CSE",    "phoneNumber" : "(425)-305-8801" }
     ],
     "calendar": [
-        { "date": "Tuesday (3/28) @ TBD",       "message": "Smash Tourney"},
-        { "date": "Wednesday (3/29) @ TBD",     "message": "List Party"},
+        { "date": "Wednesday (3/29) @ 7:30pm",  "message": "List Party"},
         { "date": "Friday (3/31) @ 8:00pm",     "message": "Presentation Night"},
         { "date": "Sunday (4/2) @ 8:00pm",      "message": "Pledgeoke"}
         
