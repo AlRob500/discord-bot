@@ -133,9 +133,12 @@
         { "name" : "Arnav Rajashekara", "major" : "CSE",    "phoneNumber" : "(425)-305-8801" }
     ],
     "calendar": [
-        { "date": "Wednesday (3/29) @ 7:30pm",  "message": "List Party"},
-        { "date": "Friday (3/31) @ 8:00pm",     "message": "Presentation Night"},
-        { "date": "Sunday (4/2) @ 8:00pm",      "message": "Pledgeoke"}
+        { "date": "Monday (4/3)",      "message": "Pledge Nationals Test @ 8pm, all pledges @house by 7pm"},
+        { "date": "Tuesday (4/4)",     "message": "Wing Night @7:30pm all pledges @ house by 7pm"},
+        { "date": "Wednesday (4/5)",    "message": "Event TBD, all pledges @ house by 8pm"},
+        { "date": "Thursday (4/6)",     "message": "4 pledges @ house, kill Cam @ dawn" },
+        { "date": "Fiday (4/7)",        "message": "Fun Night @ 7pm, actives @ house by 6:30pm" },
+        { "date": "Saturday (4/8)",     "message": "AA Night @ 7:30pm, shinies @ house by 4:30pm, all actives @ house by 6:30pm" }
         
     ]
 }
