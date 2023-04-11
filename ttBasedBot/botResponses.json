@@ -33,7 +33,17 @@
         { "id": "Σ1062", "name": "Jacob M." },
         { "id": "Σ1063", "name": "Graham" },
         { "id": "Σ1064", "name": "Luke" },
-        { "id": "Σ1065", "name": "Nate H." }
+        { "id": "Σ1065", "name": "Nate H." },
+        { "id": "Σ1066", "name": "Aneetej Arora" },
+        { "id": "Σ1067", "name": "Matthew Romans" },
+        { "id": "Σ1068", "name": "Jay Bhanot" },
+        { "id": "Σ1069", "name": "Nav Rajashekara" },
+        { "id": "Σ1070", "name": "Jack Grimm" },
+        { "id": "Σ1071", "name": "Emmett Chambers" },
+        { "id": "Σ1072", "name": "Akshat Katwala" },
+        { "id": "Σ1073", "name": "Brendan Sheehan" },
+        { "id": "Σ1074", "name": "Shiva Nallapati" },
+        { "id": "Σ1075", "name": "Addy Prasannas" }
     ],
     "doorCode": "3969",
     "standardsLink": "https://docs.google.com/forms/d/e/1FAIpQLScXktdcrC3qgcrLQ3j-ZOhcSvsGH2MUWHpwfQrwn8L57C3SuQ/viewform",
@@ -110,35 +120,35 @@
         { "time": "12:30-1:00: ",    "names": "Bereal & Pledge Nav" }
     ],
     "barShift": [
-        { "time": "9:00-9:30:  ",      "names": "Gaven & Connor" },
+        { "time": "9:00-9:30:  ",    "names": "Gaven & Connor" },
         { "time": "9:30-10:00: ",    "names": "Max & Franco" },
         { "time": "10:00-10:30:",    "names": "Justin & Cam" },
         { "time": "10:30-11:00:",    "names": "Gamer & Backbone" },
         { "time": "11:00-11:30:",    "names": "Vector & Jack" },
         { "time": "11:30-12:00:",    "names": "Travis & Bryce" },
         { "time": "12:00-12:30:",    "names": "Peter & Nob" },
-        { "time": "12:30-1:00: ",     "names": "Oliver & Connor" }
+        { "time": "12:30-1:00: ",    "names": "Oliver & Connor" }
     ],
     "pledges": [
-        { "name": "Emmett Chambers",    "major": "MechE",   "phoneNumber": "(216)-645-8398" },
-        { "name": "Akshat Katwala",     "major": "CSE",     "phoneNumber": "(714)-496-1685" },
-        { "name": "Shiva Nallapati",    "major": "CSE",     "phoneNumber": "(630)-532-0424" },
-        { "name" : "Advaith Prasanna",  "major" : "CSE",    "phoneNumber" : "(512)-917-4810" },
-        { "name" : "Aneetej Arora",     "major" : "CSE",    "phoneNumber" : "(614)-787-0179" },
-        { "name" : "Jack Grimm",        "major" : "CSE",    "phoneNumber" : "(330)-808-4235" },
-        { "name" : "Kenny Tanaka",      "major" : "MechE",  "phoneNumber" : "(614)-598-6424" },
-        { "name" : "Brendan Sheehan",   "major" : "Civil",  "phoneNumber" : "(614)-619-6102" },
-        { "name" : "Matthew Romans",    "major" : "MechE",  "phoneNumber" : "(513)-330-6102" },
-        { "name" : "Jay Bhanot",        "major" : "Civil",  "phoneNumber" : "(240)-888-0356" },
-        { "name" : "Arnav Rajashekara", "major" : "CSE",    "phoneNumber" : "(425)-305-8801" }
+        { "name": "Emmett Chambers",   "major": "MechE",   "phoneNumber": "(216)-645-8398" },
+        { "name": "Akshat Katwala",    "major": "CSE",     "phoneNumber": "(714)-496-1685" },
+        { "name": "Shiva Nallapati",   "major": "CSE",     "phoneNumber": "(630)-532-0424" },
+        { "name": "Advaith Prasanna",  "major" : "CSE",    "phoneNumber": "(512)-917-4810" },
+        { "name": "Aneetej Arora",     "major" : "CSE",    "phoneNumber": "(614)-787-0179" },
+        { "name": "Jack Grimm",        "major" : "CSE",    "phoneNumber": "(330)-808-4235" },
+        { "name": "Kenny Tanaka",      "major" : "MechE",  "phoneNumber": "(614)-598-6424" },
+        { "name": "Brendan Sheehan",   "major" : "Civil",  "phoneNumber": "(614)-619-6102" },
+        { "name": "Matthew Romans",    "major" : "MechE",  "phoneNumber": "(513)-330-6102" },
+        { "name": "Jay Bhanot",        "major" : "Civil",  "phoneNumber": "(240)-888-0356" },
+        { "name": "Arnav Rajashekara", "major" : "CSE",    "phoneNumber": "(425)-305-8801" }
     ],
     "calendar": [
         { "date": "Monday (4/3)",      "message": "Pledge Nationals Test @ 8pm, all pledges @house by 7pm"},
         { "date": "Tuesday (4/4)",     "message": "Wing Night @7:30pm all pledges @ house by 7pm"},
-        { "date": "Wednesday (4/5)",    "message": "Event TBD, all pledges @ house by 8pm"},
-        { "date": "Thursday (4/6)",     "message": "4 pledges @ house, kill Cam @ dawn" },
-        { "date": "Fiday (4/7)",        "message": "Fun Night @ 7pm, actives @ house by 6:30pm" },
-        { "date": "Saturday (4/8)",     "message": "AA Night @ 7:30pm, shinies @ house by 4:30pm, all actives @ house by 6:30pm" }
+        { "date": "Wednesday (4/5)",   "message": "Event TBD, all pledges @ house by 8pm"},
+        { "date": "Thursday (4/6)",    "message": "4 pledges @ house, kill Cam @ dawn" },
+        { "date": "Fiday (4/7)",       "message": "Fun Night @ 7pm, actives @ house by 6:30pm" },
+        { "date": "Saturday (4/8)",    "message": "AA Night @ 7:30pm, shinies @ house by 4:30pm, all actives @ house by 6:30pm" }
         
     ]
 }
