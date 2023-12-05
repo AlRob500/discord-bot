@@ -29,6 +29,7 @@ nvm use 16
 
 ```bash
 BOT_TOKEN = <DISCORD BOT TOKEN>
+LOG_PREFIX = 'Testing Bot: '
 ```
 
 Swap out `<DISCORD BOT TOKEN>` with token provided by discord.
@@ -45,6 +46,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable discord-bot.service
 sudo systemctl start discord-bot.service
 ```
+
+IMPORTANT NOTE: Make sure to change all file paths in the servicemd folder. The user will be different and therefore the file paths must reflect this.
 
 ## Show service logs
 
