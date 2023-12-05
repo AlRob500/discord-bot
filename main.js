@@ -1,3 +1,3 @@
-const { ttBasedBot } = require("./ttBasedBot");
+const { discordBot } = require("./discordBot");
 
-ttBasedBot.login(process.env.TTBASED_TOKEN);
+discordBot.login(process.env.BOT_TOKEN);

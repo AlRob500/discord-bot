@@ -1,0 +1,16 @@
+{
+    "sample": [
+        {"item": "Hello"}
+    ],
+    "barShift": [
+        { "time": "N/A ",    "names": "" }
+    ],
+    "pledges": [
+        { "name": "Steven", "major": "", "phoneNumber": ""}
+    ],
+    "calendar": [
+        { "date": "(4/19) @ Dawn",      "message": "Kill Cam"}
+        
+        
+    ]
+}
